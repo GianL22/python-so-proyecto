@@ -3,8 +3,10 @@
 Python3 Userprocess.py
 
 ### Ejercicio 3 y 4
-Python3 timeprog.py ucp.py n file1.txt file2.txt
-n: entero entre 1 y 16354
+Python3 timeprog.py ucp.py 1 file1.txt file2.txt\n
+Python3 timeprog.py ucp.py 32 file1.txt file2.txt\n
+Python3 timeprog.py ucp.py 8192 file1.txt file2.txt\n
+Python3 timeprog.py ucp.py 16384 file1.txt file2.txt\n
 
 ### Ejercicio 5
 python3 Signal.py
