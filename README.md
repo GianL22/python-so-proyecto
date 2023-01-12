@@ -1,4 +1,15 @@
 # Proyecto de so
+Para instalar python en linux deben:
+1.Abren la terminal
+2.Actualizan el repositorio local 
+```
+sudo apt update
+```
+3.Instalan python
+```
+sudo apt install python3
+```
+
 ## Ejercicio 2
 ```
 python3 Userprocess.py
