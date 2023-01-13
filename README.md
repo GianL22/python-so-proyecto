@@ -14,21 +14,28 @@ sudo apt install python3
 
 ## Ejercicio 2
 ```
-python3 Userprocess.py
+make Userprocess
 ```
-## Ejercicio 3 y 4
+## Ejercicio 3
 ```
-python3 timeprog.py ucp.py 1 file1.txt file2.txt
-python3 timeprog.py ucp.py 32 file1.txt file2.txt
-python3 timeprog.py ucp.py 8192 file1.txt file2.txt
-python3 timeprog.py ucp.py 16384 file1.txt file2.txt
+make timeprog prog="firefox"
+```
+## Ejercicio 4
+```
+make ucp bufsize=1
+make ucp bufsize=32
+make ucp bufsize=8192
+make ucp bufsize=16384
 ```
 ## Ejercicio 5
 ```
-python3 Signal.py
+make Signal
 ```
-## Ejercicio 6
+## Ejercicio 6.1
 ```
-python3 FibonacciMultihilo.py
-python3 FibonacciSecuencial.py
+make FibonacciSecuencial
+```
+## Ejercicio 6.2
+```
+make FibonacciMultihilo
 ```
