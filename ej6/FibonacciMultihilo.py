@@ -3,7 +3,6 @@ import threading
 import time
 import random
 
-
 #Genera un valor inicial entre 0 y 19
 def nInicial(): 
     return random.randrange(0,20); 
@@ -32,20 +31,19 @@ class miHilo (threading.Thread):
     def run(self):
         self.sum = fibonacci(self.inicio, self.n)
         
-        
 if __name__ == '__main__':
     hilos = []
     resultado = 0
     inicial = nInicial();
     #Se instancian 20 objetos de las clase miHilo    
     for i in range(20):
-        hilos.append(miHilo(inicial, 50000));    
+        hilos.append(miHilo(inicial, 50000))
         #Se inician los hilos, el metodo start dispara el método run de la clase miHilo 
-        hilos[i].start();    
-    #Se sincronizan todos los hilos
+        hilos[i].start()
+    #Se espera que todos los hilos terminen su ejecución
     for hilo in hilos:
         hilo.join()
-    #Cuando todos los hilos han calculado las suceciones, se totalizael resultado accediendo al campo sum de cada hilo
+    #Cuando todos los hilos han calculado las sucesiones, se totaliza el resultado accediendo al campo sum de cada hilo
     for hilo in hilos:
-        resultado += hilos[i].sum;
+        resultado += hilo.sum;
     print(resultado)

@@ -16,7 +16,7 @@ if __name__ == '__main__':
                 while True: 
                     #Se lee el máximo de caracteres posibles con el bufsize definido
                     chunk = fsource.read(bufsize);
-                    #Se detiene el ciclo cuando se leyó todo el contenido del archivo de salida
+                    #Se detiene el ciclo cuando se leyó todo el contenido del archivo de entrada
                     if (chunk == ''):
                         break;
                     #Se escribe lo leido en el archivo de salida
@@ -27,4 +27,4 @@ if __name__ == '__main__':
         else:
             print("ERROR el valor bufsize debe estar dentro del rango 1 a 16384 ")
     else:
-    	print("ERROR faltan argumentos")
+    	print("ERROR en el numero de argumentos")
