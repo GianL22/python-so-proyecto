@@ -14,5 +14,5 @@ def fibonacci(a,n):
     return c;
 
 if __name__ == '__main__':
-    #Se imprime el valo final
+    #Se imprime el valor final
     print(fibonacci(nInicial(),1000000));
